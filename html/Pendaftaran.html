@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head> 
+	<title>Pendaftaran Sidang</title>
+	<link rel="stylesheet" href="..\phpIntro.css">
+</head>
+
+<body>
+	<div class="center">
+		<img src="https://ecampus.i-tech.ac.id/tech/img/logo_perguruanTinggi_18.png">
+		<h2 class="centerh2">Pendaftaran Sidang Proyek</h2>
+	</div>
+	<div class="navbar">
+		<a href="..\index.html">Beranda</a>
+		<a href="Prosedur.html">Prosedur</a>
+		<a class="active" href="Pendaftaran.html">Pendaftaran</a>
+		<a href="Kontak.html">Kontak Kami</a>
+	</div>
+	<div class="content">
+		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
+		<div >
+			<form action ="..\projinsert.php" method="post "id="pendaftaran">
+				<label>NIM</label></label>
+					<input name="nim" type="text" >
+				<label>Nama</label></lab><input type="text" name="nama">
+				<label>Proyek</label>
+					<select name="proj">
+						<option value="proj1">Proyek 1</option>
+						<option value="proj2">Proyek 2</option>
+						<option value="proj3">Proyek 3</option>
+						<option value="proj4">Proyek 4</option>
+					</select>
+				<label>Judul Proyek</label></lab><textarea name="judul proj" rows="5" cols="20"></textarea>
+			</form>
+			<button form="pendaftaran" class="sendform" type="button">Submit</button>
+			<button form="pendaftaran" class="sendform" type="reset">Reset</button>
+		</div>
+	</div>
+</body>
+</html>

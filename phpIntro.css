@@ -1,0 +1,82 @@
+/* Styling Dasar*/
+body{
+	background-color:#202020; 
+	color:#edf5fc;
+	font-family: Verdana;
+}
+img {
+	width: 250px;
+}
+
+/* Custom */
+.navbar {
+	overflow: hidden;
+	background-color: #DBE9EE;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.navbar a {
+	color: black;
+	text-align: center;
+	padding: 0px 20px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #7FB1C3;
+}
+
+.navbar a.active {
+  background-color: #1F3E61;
+  color: white;
+}
+
+.center {
+	background-color: #DBE9EE;
+	color: black;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.centerh2 {
+	margin: 10px;
+	margin-top: -10px;
+	margin-bottom: 5px;
+}
+
+.content{
+	overflow: hidden;
+	background-color: #DBE9EE;
+	color: black;
+	width: 50%;
+	text-align: center;
+	margin: -10px auto;
+	margin-top: 5px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#pendaftaran{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 10px;
+	margin: 0 10%;
+	justify-content: center;
+}
+
+.sendform{
+	margin: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#prosedur{
+	text-align: left;
+}
+
+#prosedur h3{
+	text-align: center;
+}
