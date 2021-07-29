@@ -20,7 +20,10 @@
 	<div class="content">
 		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
 		<div >
-			<form action ="..\projinsert.php" method="post "id="pendaftaran">
+			<?php
+			pre_r($_POST);
+			?>
+			<form action ="" method="POST"id="pendaftaran">
 				<label>NIM</label></label>
 					<input name="nim" type="text" >
 				<label>Nama</label></lab><input type="text" name="nama">
@@ -31,10 +34,22 @@
 						<option value="proj3">Proyek 3</option>
 						<option value="proj4">Proyek 4</option>
 					</select>
-				<label>Judul Proyek</label></lab><textarea name="judul proj" rows="5" cols="20"></textarea>
+				<label>Judul Proyek</label></lab><textarea name="judul_proj" rows="5" cols="20"></textarea>
 			</form>
-			<button form="pendaftaran" class="sendform" type="button">Submit</button>
+			<button form="pendaftaran" class="sendform" type="submit">Submit</button>
 			<button form="pendaftaran" class="sendform" type="reset">Reset</button>
+			<p>Terima kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!</p> 
+			<p>Data yang anda masukan adalah sebagai berikut:</p>
+			<p>NIM: <?php echo $_POST["nim"]?></p>
+			<p>Nama: <?php echo $_POST["nama"]?></p>
+			<p>Proyek: <?php echo $_POST["proj"]?></p>
+			<p>Judul: <?php echo $_POST["judul_proj"]?></p>
+			<?php
+				function pre_r( $array ){
+				echo "<pre>";
+				print_r($array);
+				echo "</pre>";}
+			?>
 		</div>
 	</div>
 	<div class="footer">
