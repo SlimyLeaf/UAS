@@ -20,7 +20,7 @@
 	<div class="content">
 		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
 		<div >
-			<form action ="..\projinsert.php" method="post "id="pendaftaran">
+			<form  method="post "id="pendaftaran">
 				<label>NIM</label></label>
 					<input name="nim" type="text" >
 				<label>Nama</label></lab><input type="text" name="nama">
@@ -33,8 +33,13 @@
 					</select>
 				<label>Judul Proyek</label></lab><textarea name="judul proj" rows="5" cols="20"></textarea>
 			</form>
-			<button form="pendaftaran" class="sendform" type="button">Submit</button>
+			<button form="pendaftaran" class="sendform" type="button" onclick="sendfunc()">Submit</button>
 			<button form="pendaftaran" class="sendform" type="reset">Reset</button>
+			<script>
+function sendfunc() {
+  document.getElementById("pendaftaran").submit();
+}
+</script>
 		</div>
 	</div>
 	<div class="footer">
