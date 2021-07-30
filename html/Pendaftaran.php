@@ -19,6 +19,7 @@
 	</div>
 	<div class="content">
 		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
+		<p>Maaf saya gak bisa hosting php lewat github bu. Tapi programnya jalan kok.</p>
 		<div >
 			<?php
 			pre_r($_POST);
@@ -53,7 +54,7 @@
 		</div>
 	</div>
 	<div class="footer">
-		<p>Created by Alif Fathir Rachman</p>
+		<p><a target="blank" href="https://drive.google.com/file/d/13Pd5ohWShgwkX8NTSDaHglo6I8DG7y_f/view?usp=sharing">Created by Alif Fathir Rachman (421921052)</a></p>
 	</div>
 </body>
 </html>
